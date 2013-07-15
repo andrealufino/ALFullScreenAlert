@@ -21,12 +21,12 @@
     [super viewDidLoad];
     
     ALFSAlert *alert = [[ALFSAlert alloc] initInViewController:self];
-    [alert showAlertWithMessage:@"Sono un messaggio di ALFSAlert. Sto provando a scrivere qui dentro tramite la custom alert ALFSAlert, una subclass di UIView."];
-    [alert addButtonWithText:@"Bottone" forType:ALFSAlertButtonTypeNormal onTap:^{
-        NSLog(@"Bottone");
+    [alert showAlertWithMessage:@"I'm a message from ALFSAlert. I'm trying to write in there from the ALFSAlert class which inherits from UIView."];
+    [alert addButtonWithText:@"Button" forType:ALFSAlertButtonTypeNormal onTap:^{
+        NSLog(@"Button");
     }];
-    [alert addButtonWithText:@"Bottone 2" forType:ALFSAlertButtonTypeDelete onTap:^{
-        NSLog(@"Bottone 2");
+    [alert addButtonWithText:@"Button 2" forType:ALFSAlertButtonTypeDelete onTap:^{
+        NSLog(@"Button 2");
     }];
 }
 
