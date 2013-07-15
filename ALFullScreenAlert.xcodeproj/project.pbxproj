@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87FDE0721785A83700212499 /* UIButton+ALBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FDE0711785A83700212499 /* UIButton+ALBlock.m */; };
 		87FE19BD1782E1DF00112772 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE19BC1782E1DF00112772 /* UIKit.framework */; };
 		87FE19BF1782E1DF00112772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE19BE1782E1DF00112772 /* Foundation.framework */; };
 		87FE19C11782E1DF00112772 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE19C01782E1DF00112772 /* CoreGraphics.framework */; };
@@ -18,9 +19,15 @@
 		87FE19D31782E1DF00112772 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FE19D21782E1DF00112772 /* Default-568h@2x.png */; };
 		87FE19D61782E1DF00112772 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE19D41782E1DF00112772 /* MainStoryboard.storyboard */; };
 		87FE19D91782E1DF00112772 /* ALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FE19D81782E1DF00112772 /* ALViewController.m */; };
+		87FE19E11782E20A00112772 /* ALFSAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FE19E01782E20A00112772 /* ALFSAlert.m */; };
+		87FE19E51782F37F00112772 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE19E41782F37F00112772 /* QuartzCore.framework */; };
+		87FE19E71782F3C500112772 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE19E61782F3C500112772 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		870775D51794171200C71231 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		87FDE0701785A83700212499 /* UIButton+ALBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ALBlock.h"; sourceTree = "<group>"; };
+		87FDE0711785A83700212499 /* UIButton+ALBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ALBlock.m"; sourceTree = "<group>"; };
 		87FE19B91782E1DF00112772 /* ALFullScreenAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALFullScreenAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FE19BC1782E1DF00112772 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		87FE19BE1782E1DF00112772 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +44,10 @@
 		87FE19D51782E1DF00112772 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		87FE19D71782E1DF00112772 /* ALViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALViewController.h; sourceTree = "<group>"; };
 		87FE19D81782E1DF00112772 /* ALViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALViewController.m; sourceTree = "<group>"; };
+		87FE19DF1782E20A00112772 /* ALFSAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALFSAlert.h; sourceTree = "<group>"; };
+		87FE19E01782E20A00112772 /* ALFSAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALFSAlert.m; sourceTree = "<group>"; };
+		87FE19E41782F37F00112772 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		87FE19E61782F3C500112772 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FE19E71782F3C500112772 /* CoreImage.framework in Frameworks */,
+				87FE19E51782F37F00112772 /* QuartzCore.framework in Frameworks */,
 				87FE19BD1782E1DF00112772 /* UIKit.framework in Frameworks */,
 				87FE19BF1782E1DF00112772 /* Foundation.framework in Frameworks */,
 				87FE19C11782E1DF00112772 /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +66,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87A78D55179421BD001141F3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				87FE19CB1782E1DF00112772 /* ALAppDelegate.h */,
+				87FE19CC1782E1DF00112772 /* ALAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		87A78D56179421CA001141F3 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				87FE19D71782E1DF00112772 /* ALViewController.h */,
+				87FE19D81782E1DF00112772 /* ALViewController.m */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		87A78D57179421E1001141F3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				87FE19D41782E1DF00112772 /* MainStoryboard.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		87FDE0731785A84100212499 /* UIButton+ALBlock */ = {
+			isa = PBXGroup;
+			children = (
+				87FDE0701785A83700212499 /* UIButton+ALBlock.h */,
+				87FDE0711785A83700212499 /* UIButton+ALBlock.m */,
+			);
+			name = "UIButton+ALBlock";
+			sourceTree = "<group>";
+		};
 		87FE19B01782E1DF00112772 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +121,12 @@
 		87FE19BB1782E1DF00112772 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87FE19E61782F3C500112772 /* CoreImage.framework */,
+				87FE19E41782F37F00112772 /* QuartzCore.framework */,
 				87FE19BC1782E1DF00112772 /* UIKit.framework */,
 				87FE19BE1782E1DF00112772 /* Foundation.framework */,
 				87FE19C01782E1DF00112772 /* CoreGraphics.framework */,
+				870775D51794171200C71231 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,11 +134,10 @@
 		87FE19C21782E1DF00112772 /* ALFullScreenAlert */ = {
 			isa = PBXGroup;
 			children = (
-				87FE19CB1782E1DF00112772 /* ALAppDelegate.h */,
-				87FE19CC1782E1DF00112772 /* ALAppDelegate.m */,
-				87FE19D41782E1DF00112772 /* MainStoryboard.storyboard */,
-				87FE19D71782E1DF00112772 /* ALViewController.h */,
-				87FE19D81782E1DF00112772 /* ALViewController.m */,
+				87A78D57179421E1001141F3 /* Storyboard */,
+				87FE19E21782E20E00112772 /* ALFullScreenAlert */,
+				87A78D55179421BD001141F3 /* AppDelegate */,
+				87A78D56179421CA001141F3 /* MainViewController */,
 				87FE19C31782E1DF00112772 /* Supporting Files */,
 			);
 			path = ALFullScreenAlert;
@@ -107,6 +157,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		87FE19E21782E20E00112772 /* ALFullScreenAlert */ = {
+			isa = PBXGroup;
+			children = (
+				87FE19DF1782E20A00112772 /* ALFSAlert.h */,
+				87FE19E01782E20A00112772 /* ALFSAlert.m */,
+				87FDE0731785A84100212499 /* UIButton+ALBlock */,
+			);
+			name = ALFullScreenAlert;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +177,7 @@
 				87FE19B51782E1DF00112772 /* Sources */,
 				87FE19B61782E1DF00112772 /* Frameworks */,
 				87FE19B71782E1DF00112772 /* Resources */,
+				87D70DB9178EFEBC002BA582 /* appledoc script */,
 			);
 			buildRules = (
 			);
@@ -169,6 +230,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87D70DB9178EFEBC002BA582 /* appledoc script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "appledoc script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This can be inserted as a Run Script build phase or a Build Rule in your Xcode project\n\n# You can set this to whatever you like.\nDOCUMENTATION_DIR=\"Documentation\"\n\nif [ -e /usr/local/bin/appledoc ] ; then\n/usr/local/bin/appledoc --project-name $PRODUCT_NAME --project-company \"Andrea Mario Lufino\" --logformat xcode --docset-platform-family \"ios\" --exit-threshold 2 --verbose xcode --docset-bundle-filename \"$PRODUCT_NAME.docset\" .\nelse\necho \"AppleDoc is not installed in /usr/local/bin , you can download it from https://github.com/tomaz/appledoc\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87FE19B51782E1DF00112772 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -177,6 +255,8 @@
 				87FE19C91782E1DF00112772 /* main.m in Sources */,
 				87FE19CD1782E1DF00112772 /* ALAppDelegate.m in Sources */,
 				87FE19D91782E1DF00112772 /* ALViewController.m in Sources */,
+				87FE19E11782E20A00112772 /* ALFSAlert.m in Sources */,
+				87FDE0721785A83700212499 /* UIButton+ALBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +307,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -251,7 +331,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -261,9 +341,14 @@
 		87FE19DD1782E1DF00112772 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/Framework-bpggjaykrhjfjdajqndabvjvzqkn/Build/Products/Debug-iphoneos\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALFullScreenAlert/ALFullScreenAlert-Prefix.pch";
 				INFOPLIST_FILE = "ALFullScreenAlert/ALFullScreenAlert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,9 +357,14 @@
 		87FE19DE1782E1DF00112772 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/Framework-bpggjaykrhjfjdajqndabvjvzqkn/Build/Products/Debug-iphoneos\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALFullScreenAlert/ALFullScreenAlert-Prefix.pch";
 				INFOPLIST_FILE = "ALFullScreenAlert/ALFullScreenAlert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +389,7 @@
 				87FE19DE1782E1DF00112772 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/AL08/Library/Developer/Shared/Documentation/DocSets/ALFullScreenAlert.docset
+Time: 2013-07-15 12:26:30 +0000

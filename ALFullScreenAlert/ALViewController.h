@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "ALFSAlert.h"
 
 @interface ALViewController : UIViewController
+
+@property (nonatomic, strong) IBOutlet UITextView *txtView;
 
 @end

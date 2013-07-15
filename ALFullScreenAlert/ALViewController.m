@@ -8,6 +8,8 @@
 
 #import "ALViewController.h"
 
+#define kViewToBlur self.txtView
+
 @interface ALViewController ()
 
 @end
@@ -17,13 +19,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    ALFSAlert *alert = [[ALFSAlert alloc] initInViewController:self];
+    [alert showAlertWithMessage:@"Sono un messaggio di ALFSAlert. Sto provando a scrivere qui dentro tramite la custom alert ALFSAlert, una subclass di UIView."];
+    [alert addButtonWithText:@"Bottone" forType:ALFSAlertButtonTypeNormal onTap:^{
+        NSLog(@"Bottone");
+    }];
+    [alert addButtonWithText:@"Bottone 2" forType:ALFSAlertButtonTypeDelete onTap:^{
+        NSLog(@"Bottone 2");
+    }];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
