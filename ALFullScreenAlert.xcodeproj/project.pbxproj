@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870BBA681797E454005A0383 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 870BBA671797E454005A0383 /* screenshot.png */; };
 		87FDE0721785A83700212499 /* UIButton+ALBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FDE0711785A83700212499 /* UIButton+ALBlock.m */; };
 		87FE19BD1782E1DF00112772 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE19BC1782E1DF00112772 /* UIKit.framework */; };
 		87FE19BF1782E1DF00112772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE19BE1782E1DF00112772 /* Foundation.framework */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		870775D51794171200C71231 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		870BBA671797E454005A0383 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		87FDE0701785A83700212499 /* UIButton+ALBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ALBlock.h"; sourceTree = "<group>"; };
 		87FDE0711785A83700212499 /* UIButton+ALBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ALBlock.m"; sourceTree = "<group>"; };
 		87FE19B91782E1DF00112772 /* ALFullScreenAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALFullScreenAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 		87FE19B01782E1DF00112772 = {
 			isa = PBXGroup;
 			children = (
+				870BBA671797E454005A0383 /* screenshot.png */,
 				87FE19C21782E1DF00112772 /* ALFullScreenAlert */,
 				87FE19BB1782E1DF00112772 /* Frameworks */,
 				87FE19BA1782E1DF00112772 /* Products */,
@@ -225,6 +228,7 @@
 				87FE19D11782E1DF00112772 /* Default@2x.png in Resources */,
 				87FE19D31782E1DF00112772 /* Default-568h@2x.png in Resources */,
 				87FE19D61782E1DF00112772 /* MainStoryboard.storyboard in Resources */,
+				870BBA681797E454005A0383 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
