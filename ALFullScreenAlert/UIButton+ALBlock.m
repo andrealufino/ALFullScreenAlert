@@ -6,6 +6,11 @@
 //  Copyright (c) 2013 Andrea Mario Lufino. All rights reserved.
 //
 
+// Based on Josh Holtz category
+// You can find it here :
+// https://gist.github.com/joshdholtz/2468899
+// See UIButton+Block.m
+
 #import "UIButton+ALBlock.h"
 #import "/usr/include/objc/runtime.h"
 
